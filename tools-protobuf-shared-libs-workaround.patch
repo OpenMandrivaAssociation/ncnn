@@ -1,0 +1,13 @@
+diff --git a/tools/CMakeLists.txt b/tools/CMakeLists.txt
+index 965046be..f3241ba0 100644
+--- a/tools/CMakeLists.txt
++++ b/tools/CMakeLists.txt
+@@ -1,6 +1,8 @@
+ cmake_minimum_required(VERSION 3.1) # for CMAKE_CXX_STANDARD
+ set(CMAKE_CXX_STANDARD 17)
+ 
++add_definitions(-DPROTOBUF_USE_DLLS)
++
+ include(GNUInstallDirs)
+ macro(ncnn_install_tool toolname)
+     install(TARGETS ${toolname} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
