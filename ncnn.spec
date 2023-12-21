@@ -7,8 +7,8 @@
 
 Summary: High-performance neural network inference framework
 Name:    ncnn
-Version: 20230223
-Release: 2
+Version: 20231027
+Release: 1
 License: BSD-3-Clause
 #Group:   System/Libraries
 URL:     %{gitbase}/%{upstream}/%{name}
