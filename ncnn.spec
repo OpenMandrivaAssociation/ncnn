@@ -7,14 +7,14 @@
 
 Summary: High-performance neural network inference framework
 Name:    ncnn
-Version: 20240820
-Release: 3
+Version: 20260526
+Release: 1
 License: BSD-3-Clause
 #Group:   System/Libraries
 URL:     %{gitbase}/%{upstream}/%{name}
 Source0: %{gitbase}/%{upstream}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:  tools-cmake_cxx_standard_17.patch
-Patch1:  tools-protobuf-shared-libs-workaround.patch
+# dropped (no longer applies): Patch0:  tools-cmake_cxx_standard_17.patch
+# dropped (no longer applies): Patch1:  tools-protobuf-shared-libs-workaround.patch
 
 BuildRequires: cmake
 BuildRequires: glslang
